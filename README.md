@@ -8,10 +8,10 @@ Currently, the paper is under review at *The Visual Computer* (TVC).
 
 ## 💡 Method Overview
 
-The overall architecture of our proposed framework utilizes a geometry-aware approach adapted from the SAM 3D body to achieve robust multi-task driver monitoring.
+The architecture of the Geo-DMS framework built upon the frozen SAM 3D Body framework (DINOv3 backbone & MHR decoder), the pipeline employs an Inter-Layer Channel Aggregator (ILCA) to unify global semantics ($F_{agg}$) and a Pose-Guided Adaptive Fusion (PGAF) module to inject geometric priors via a parallel strategy.
 
 <div align="center">
-  <img src="./assets/pipeline.png" width="100%" alt="Pipeline Figure"/>
+  <img src="./pipeline.png" width="100%" alt="Pipeline Figure"/>
   <br/>
   <em>Figure 1: The overall framework of our proposed Geo-DMS.</em>
 </div>
