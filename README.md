@@ -11,7 +11,7 @@ Currently, the paper is under review at *The Visual Computer* (TVC).
 The overall architecture of our proposed framework utilizes a geometry-aware approach adapted from the Segment Anything Model (SAM) to achieve robust multi-task driver monitoring.
 
 <div align="center">
-  <img src="./assets/pipeline_main.png" width="100%" alt="Pipeline Figure"/>
+  <img src="./assets/pipeline.png" width="100%" alt="Pipeline Figure"/>
   <br/>
   <em>Figure 1: The overall framework of our proposed Geo-DMS.</em>
 </div>
@@ -33,15 +33,3 @@ Please start ("⭐️") this repository to receive notifications about the code 
 - [ ] **Code release (Coming soon upon acceptance)**
 - [ ] Release pretrained weights
 - [ ] Add detailed installation and usage instructions
-
-## 📝 Citation
-
-If you find this work or the potential code useful for your research, please consider citing our preprint:
-
-```bibtex
-@article{geo_dms_2026,
-  title={Geo-DMS: Geometry-Aware Multi-Task Driver Monitoring via Pose-Guided Adaptation of SAM 3D Body},
-  author={[Your Name] and [Co-author Names]},
-  journal={arXiv preprint arXiv:2400.XXXXX},
-  year={2024}
-}
