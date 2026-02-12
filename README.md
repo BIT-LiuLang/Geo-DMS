@@ -8,7 +8,7 @@ Currently, the paper is under review at *The Visual Computer* (TVC).
 
 ## 💡 Method Overview
 
-The overall architecture of our proposed framework utilizes a geometry-aware approach adapted from the Segment Anything Model (SAM) to achieve robust multi-task driver monitoring.
+The overall architecture of our proposed framework utilizes a geometry-aware approach adapted from the SAM 3D body to achieve robust multi-task driver monitoring.
 
 <div align="center">
   <img src="./assets/pipeline.png" width="100%" alt="Pipeline Figure"/>
