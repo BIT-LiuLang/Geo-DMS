@@ -1,0 +1,48 @@
+_BASE_: "../../checkpoints/sam-3d-body-dinov3/model_config.yaml"
+MODEL:
+  DMS:
+    ENABLE: True
+    
+    AGGREGATOR_TYPE: "Inter-layer"    
+    FUSION_TYPE: "adaptive"     
+    NUM_SCALES: 4
+    
+    INPUT_DIM: 1024
+    DEPTH: 2                      
+    DROPOUT: 0.1
+    
+    TASKS:
+      - ["emotion", 7]       
+      - ["drowsy", 2]        
+      - ["distraction", 10]  
+
+    LOSS_WEIGHTS:
+      EMOTION: 1.5          
+      DROWSY: 0.5            
+      DISTRACTION: 3.0       
+
+DATASETS:
+  TRAIN_DMS: 
+    - "affectnet"       
+    - "fer2013"
+    - "rafdb"
+    - "drowsy_hf"         
+    - "state_farm"
+    
+
+  VAL_DMS: 
+    - "affectnet"
+    - "fer2013"
+    - "rafdb"
+    - "drowsy_hf"
+    - "state_farm"
+
+SOLVER:
+  FREEZE_BACKBONE: True      
+  BATCH_SIZE: 64             
+  MAX_EPOCHS: 20             
+  
+  BASE_LR: 1e-4
+  WEIGHT_DECAY: 1e-2
+  
+  WARMUP_EPOCHS: 2
