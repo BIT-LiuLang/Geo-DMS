@@ -1,6 +1,6 @@
 # Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors
 
-[![Research Square](https://img.shields.io/badge/Preprint-Research%20Square-blue)](https://www.researchsquare.com/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br/>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18790509.svg)](https://doi.org/10.5281/zenodo.18790509) [![Research Square](https://img.shields.io/badge/Preprint-Research%20Square-blue)](https://www.researchsquare.com/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br/>
 
 This repository holds the official implementation of the paper: **"Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors"**.
 
@@ -18,18 +18,28 @@ The architecture of the Geo-DMS framework built upon the frozen SAM 3D Body fram
 
 <br/>
 
-## 📢 Code Release & Coming Soon
+## 📢 Code & Dataset
 
-We are actively organizing and cleaning up the source code.
-
-**The full implementation code and pretrained models will be publicly released upon the paper's acceptance.**
-
-Please start ("⭐️") this repository to receive notifications about the code release and updates.
+To enhance the transparency and reproducibility of our research, the core implementation of Geo-DMS has been archived. 
+* Note: We are currently organizing the complete pre-trained weights and will continually update this repository. Please star ("⭐️") this repository to receive notifications about future updates.
 
 ## ✅ To-Do List
 
 - [x] Paper submission
 - [x] Release preprint (Research Square)
-- [ ] **Code release (Coming soon upon acceptance)**
+- [x] **Release core algorithm implementation**
 - [ ] Release pretrained weights
 - [ ] Add detailed installation and usage instructions
+
+## 📌 Citation
+
+As requested by the journal editor, if you find this repository or our research helpful, please consider citing our related manuscript currently under review at *The Visual Computer*:
+
+```bibtex
+@article{liu2026geodms,
+  title={Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors},
+  author={Liu, Lang and Jiang, Xiaobei and Guo, Hongwei and Wang, Zhengyu},
+  journal={The Visual Computer},
+  year={2026},
+  note={Under Review}
+}
