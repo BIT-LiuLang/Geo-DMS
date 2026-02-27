@@ -1,14 +1,16 @@
 # Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18790509.svg)](https://doi.org/10.5281/zenodo.18790509) [![Research Square](https://img.shields.io/badge/Preprint-Research%20Square-blue)](https://www.researchsquare.com/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br/>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18790509.svg)](https://doi.org/10.5281/zenodo.18790509) [![Research Square](https://img.shields.io/badge/Preprint-Research%20Square-blue)](https://www.researchsquare.com/) 
 
 This repository holds the official implementation of the paper: **"Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors"**.
 
 Currently, the paper is under review at *The Visual Computer* (TVC).
 
-## 💡 Method Overview
+## 📝 Abstract
 
-The architecture of the Geo-DMS framework built upon the frozen SAM 3D Body framework (DINOv3 backbone & MHR decoder), the pipeline employs an Inter-Layer Channel Aggregator (ILCA) to unify global semantics ($F_{agg}$) and a Pose-Guided Adaptive Fusion (PGAF) module to inject geometric priors via a parallel strategy.
+Next-generation intelligent cockpits require a unified and high-precision understanding of driver states. Traditional driver monitoring systems, designed in a task-fragmented manner, struggle to resolve geometric ambiguities caused by occlusions. To bridge the gap between 2D visual representations and 3D physical structures, we propose Geo-DMS, a unified driver monitoring system that leverages DINOv3 as the visual backbone and SAM3D Body for explicit human geometric priors. Geo-DMS integrates multi-level features through an Inter-Layer Channel Aggregator and enforces structural constraints via a Pose-Guided Adaptive Fusion module. Unlike conventional classification-only approaches, Geo-DMS simultaneously predicts driver risk states (drowsiness, emotion, distraction) and metric-scale 3D human body meshes. Extensive experiments on five public datasets demonstrate competitive performance and strong robustness, achieving this with only 79.6M updated parameters (approximately 5.7% of the total model capacity), highlighting its efficiency and scalability.
+
+## 💡 Method Overview
 
 <div align="center">
   <img src="assets/pipeline.png" width="100%" alt="Pipeline Figure"/>
@@ -17,6 +19,8 @@ The architecture of the Geo-DMS framework built upon the frozen SAM 3D Body fram
 </div>
 
 <br/>
+
+The architecture of the Geo-DMS framework built upon the frozen SAM 3D Body framework (DINOv3 backbone & MHR decoder), the pipeline employs an Inter-Layer Channel Aggregator (ILCA) to unify global semantics ($F_{agg}$) and a Pose-Guided Adaptive Fusion (PGAF) module to inject geometric priors via a parallel strategy.
 
 ## 📢 Code & Dataset
 
@@ -33,7 +37,7 @@ To enhance the transparency and reproducibility of our research, the core implem
 
 ## 📌 Citation
 
-As requested by the journal editor, if you find this repository or our research helpful, please consider citing our related manuscript currently under review at *The Visual Computer*:
+If you find this repository or our research helpful, please use the following BibTeX entry:
 
 ```bibtex
 @article{liu2026geodms,
