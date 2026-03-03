@@ -1,10 +1,10 @@
 # Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18790509.svg)](https://doi.org/10.5281/zenodo.18790509) [![Research Square](https://img.shields.io/badge/Preprint-Research%20Square-blue)](https://www.researchsquare.com/) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18790509.svg)](https://doi.org/10.5281/zenodo.18790509) 
 
 This repository holds the official implementation of the paper: **"Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors"**.
 
-Currently, the paper is under review at *The Visual Computer* (TVC).
+Currently, the paper is under review at the **2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2026)**.
 
 ## 📝 Abstract
 
@@ -29,9 +29,9 @@ To enhance the transparency and reproducibility of our research, the core implem
 
 ## ✅ To-Do List
 
-- [x] Paper submission
 - [x] Release preprint (Research Square)
 - [x] **Release core algorithm implementation**
+- [x] Submit to IEEE SMC 2026
 - [ ] Release pretrained weights
 - [ ] Add detailed installation and usage instructions
 
@@ -40,10 +40,10 @@ To enhance the transparency and reproducibility of our research, the core implem
 If you find this repository or our research helpful, please use the following BibTeX entry:
 
 ```bibtex
-@article{liu2026geodms,
+@inproceedings{liu2026geodms,
   title={Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors},
-  author={Liu, Lang and Jiang, Xiaobei and Guo, Hongwei and Wang, Zhengyu},
-  journal={The Visual Computer},
+  author={Liu, Lang and Jiang, Xiaobei and Wang, Zhengyu and Zhou, Junjun and Ma, Yixue},
+  booktitle={2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
   year={2026},
   note={Under Review}
 }
