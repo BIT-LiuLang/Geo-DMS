@@ -17,9 +17,9 @@ import torch
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor, StochasticWeightAveraging
 from pytorch_lightning.loggers import WandbLogger
-from yacs.config import CfgNode as CN # 引入 CN 以便动态添加节点
+from yacs.config import CfgNode as CN 
 torch.serialization.add_safe_globals([CN])
-from geo_dms.models.meta_arch.sam3d_body import GEODMS
+from geo_dms.models.meta_arch.geo_dms import GEODMS
 from geo_dms.utils.config import get_config 
 from geo_dms.utils.checkpoint import load_state_dict 
 
