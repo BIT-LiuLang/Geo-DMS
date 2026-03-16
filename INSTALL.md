@@ -32,14 +32,12 @@ pip install git+https://github.com/microsoft/MoGe.git
 ```
 
 
-## Getting Model Checkpoints
-
-We host model checkpoints on Hugging Face. **Available models:**
+### 6. Get SAM 3D Body Checkpoints
+The official SAM 3D Body team hosts the pre-trained model checkpoints on Hugging Face. Available models:
 - [`facebook/sam-3d-body-dinov3`](https://huggingface.co/facebook/sam-3d-body-dinov3)
 - [`facebook/sam-3d-body-vith`](https://huggingface.co/facebook/sam-3d-body-vith)
 
+⚠️ Please note that you need to request access on the SAM 3D Body Hugging Face repos above. Once accepted, you need to be authenticated to download the checkpoints.
 
-⚠️ Please note that you need to **request access** on the SAM 3D Body Hugging Face repos above. Once accepted, you need to be authenticated to download the checkpoints.
-
-⚠️ SAM 3D Body is available via HuggingFace globally, **except** in comprehensively sanctioned jurisdictions. Sanctioned jurisdiction will result in requests being **rejected**.
+⚠️ SAM 3D Body is available via HuggingFace globally, except in comprehensively sanctioned jurisdictions. Sanctioned jurisdictions will result in requests being rejected.
 
