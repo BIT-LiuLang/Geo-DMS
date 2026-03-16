@@ -20,7 +20,7 @@ root = pyrootutils.setup_root(
     dotenv=True,
 )
 
-from geo_dms.models.meta_arch.sam3d_body import GEODMS
+from geo_dms.models.meta_arch.geo_dms import GEODMS
 from geo_dms.utils.config import get_config
 from geo_dms.utils.checkpoint import load_state_dict
 from geo_dms.data.datasets.dms_datasets import get_dms_loader
