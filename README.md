@@ -22,18 +22,45 @@ Next-generation intelligent cockpits require a unified and high-precision unders
 
 The architecture of the Geo-DMS framework built upon the frozen SAM 3D Body framework (DINOv3 backbone & MHR decoder), the pipeline employs an Inter-Layer Channel Aggregator (ILCA) to unify global semantics ($F_{agg}$) and a Pose-Guided Adaptive Fusion (PGAF) module to inject geometric priors via a parallel strategy.
 
-## 📢 Code & Dataset
+## 📦 Code & Checkpoints
 
-To enhance the transparency and reproducibility of our research, the core implementation of Geo-DMS has been archived. 
-* Note: We are currently organizing the complete pre-trained weights and will continually update this repository. Please star ("⭐️") this repository to receive notifications about future updates.
+The core engine of **Geo-DMS** is released. 
+
+⏳ **Pre-trained Weights:** Currently undergoing final organization. 
+
+## 🚀 Getting Started
+
+### Installation & Deployment
+
+For detailed environment setup and deployment instructions, please refer to our Installation Guide: [INSTALL.md](INSTALL.md).
+
+### Model Training
+
+To train the Geo-DMS model using your configured datasets, run the following command:
+
+```bash
+python tools/train_dms.py --config-file configs/experiments/dms_multitask_.yaml
+```
+
+### Inference Demo
+
+To run inference on a folder of images and visualize the multi-task results, use the demo script. Replace `xxxx.ckpt` with your actual checkpoint file name:
+
+```bash
+python tools/demo_dms_vis.py \
+  --image_folder test_demo/demo \
+  --config configs/experiments/dms_multitask.yaml \
+  --checkpoint logs/dms_training/dms_multitask/val/xxxx.ckpt
+```
 
 ## ✅ To-Do List
 
 - [x] Release preprint (Research Square)
 - [x] **Release core algorithm implementation**
 - [x] Submit to IEEE SMC 2026
+- [x] **Add installation and usage instructions**
 - [ ] Release pretrained weights
-- [ ] Add detailed installation and usage instructions
+
 
 ## 📌 Citation
 
@@ -47,3 +74,4 @@ If you find this repository or our research helpful, please use the following Bi
   year={2026},
   note={Under Review}
 }
+```
