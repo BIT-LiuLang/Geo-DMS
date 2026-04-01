@@ -39,7 +39,7 @@ For detailed environment setup and deployment instructions, please refer to our 
 To train the Geo-DMS model using your configured datasets, run the following command:
 
 ```bash
-python tools/train_dms.py --config-file configs/experiments/dms_multitask_.yaml
+python tools/train_dms.py --config-file configs/experiments/dms_multitask.yaml
 ```
 
 ### Inference Demo
