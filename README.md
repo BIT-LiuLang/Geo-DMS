@@ -4,8 +4,6 @@
 
 This repository holds the official implementation of the paper: **"Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors"**.
 
-Currently, the paper is under review at the **2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2026)**.
-
 ## 📝 Abstract
 
 Next-generation intelligent cockpits require a unified and high-precision understanding of driver states. Traditional driver monitoring systems, designed in a task-fragmented manner, struggle to resolve geometric ambiguities caused by occlusions. To bridge the gap between 2D visual representations and 3D physical structures, we propose Geo-DMS, a unified driver monitoring system that leverages DINOv3 as the visual backbone and SAM3D Body for explicit human geometric priors. Geo-DMS integrates multi-level features through an Inter-Layer Channel Aggregator and enforces structural constraints via a Pose-Guided Adaptive Fusion module. Unlike conventional classification-only approaches, Geo-DMS simultaneously predicts driver risk states (drowsiness, emotion, distraction) and metric-scale 3D human body meshes. Extensive experiments on five public datasets demonstrate competitive performance and strong robustness, achieving this with only 79.6M updated parameters (approximately 5.7% of the total model capacity), highlighting its efficiency and scalability.
