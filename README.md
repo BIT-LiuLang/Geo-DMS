@@ -57,7 +57,7 @@ python tools/demo_dms_vis.py \
 
 - [x] Release preprint (Research Square)
 - [x] **Release core algorithm implementation**
-- [x] Submit to IEEE SMC 2026
+- [x] Submit to IEEE ICCMS 2026
 - [x] **Add installation and usage instructions**
 - [ ] Release pretrained weights
 
@@ -70,7 +70,7 @@ If you find this repository or our research helpful, please use the following Bi
 @inproceedings{liu2026geodms,
   title={Geo-DMS: Unified Multi-Task Driver Monitoring with 3D Geometric Priors},
   author={Liu, Lang and Jiang, Xiaobei and Wang, Zhengyu and Zhou, Junjun and Ma, Yixue},
-  booktitle={2026 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  booktitle={ICCMS 2026: The 18th International Conference on Computer Modeling and Simulation},
   year={2026},
   note={Under Review}
 }
